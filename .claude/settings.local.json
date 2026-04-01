@@ -22,7 +22,8 @@
       "Bash(mkdir -p /Users/siddhantkapoor/Documents/wbsk-website/public/images/weddings/garhima-ankur)",
       "Bash(curl -sL https://raw.githubusercontent.com/weddingsbysk/ShaadiPhotos/main/public/hero-bg.jpg -o /Users/siddhantkapoor/Documents/wbsk-website/public/images/hero-bg.jpg)",
       "Bash(curl -sL https://raw.githubusercontent.com/weddingsbysk/ShaadiPhotos/main/public/weddings/__TRACKED_VAR__/cover.jpg -o /Users/siddhantkapoor/Documents/wbsk-website/public/images/weddings/__TRACKED_VAR__/cover.jpg)",
-      "Bash(curl -sL https://raw.githubusercontent.com/weddingsbysk/ShaadiPhotos/main/public/weddings/__TRACKED_VAR__/image-__TRACKED_VAR__.jpg -o /Users/siddhantkapoor/Documents/wbsk-website/public/images/weddings/__TRACKED_VAR__/image-__TRACKED_VAR__.jpg)"
+      "Bash(curl -sL https://raw.githubusercontent.com/weddingsbysk/ShaadiPhotos/main/public/weddings/__TRACKED_VAR__/image-__TRACKED_VAR__.jpg -o /Users/siddhantkapoor/Documents/wbsk-website/public/images/weddings/__TRACKED_VAR__/image-__TRACKED_VAR__.jpg)",
+      "Bash(du -sh /Users/siddhantkapoor/Documents/wbsk-website/public/images/**/*.jpg /Users/siddhantkapoor/Documents/wbsk-website/public/images/*.jpg)"
     ]
   }
 }

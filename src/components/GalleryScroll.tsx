@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface GalleryImage {
   url: string;
@@ -222,7 +222,7 @@ export default function GalleryScroll({ images, title, onImageClick }: Props) {
             onClick={() => onImageClick(0)}
           >
             {images[0].url
-              ? <Image src={images[0].url} alt={images[0].caption || `${title} 1`} fill priority
+              ? <ExportedImage src={images[0].url} alt={images[0].caption || `${title} 1`} fill priority
                   className="object-cover transition-transform duration-[1.6s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                   sizes="60vw" />
               : <div className="absolute inset-0 bg-[#2a1f14]" />
@@ -239,7 +239,7 @@ export default function GalleryScroll({ images, title, onImageClick }: Props) {
             onClick={() => onImageClick(1)}
           >
             {images[1].url
-              ? <Image src={images[1].url} alt={images[1].caption || `${title} 2`} fill
+              ? <ExportedImage src={images[1].url} alt={images[1].caption || `${title} 2`} fill
                   className="object-cover transition-transform duration-[1.6s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                   sizes="40vw" loading="lazy" />
               : <div className="absolute inset-0 bg-[#2a1f14]" />
@@ -257,7 +257,7 @@ export default function GalleryScroll({ images, title, onImageClick }: Props) {
               onClick={() => onImageClick(2)}
             >
               {images[2].url
-                ? <Image src={images[2].url} alt={images[2].caption || `${title} 3`} fill
+                ? <ExportedImage src={images[2].url} alt={images[2].caption || `${title} 3`} fill
                     className="object-cover transition-transform duration-[1.6s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                     sizes="40vw" loading="lazy" />
                 : <div className="absolute inset-0 bg-[#2a1f14]" />
@@ -333,7 +333,7 @@ export default function GalleryScroll({ images, title, onImageClick }: Props) {
                   onClick={() => onImageClick(i)}
                 >
                   {img.url ? (
-                    <Image
+                    <ExportedImage
                       src={img.url}
                       alt={img.caption || `${title} ${i + 1}`}
                       fill

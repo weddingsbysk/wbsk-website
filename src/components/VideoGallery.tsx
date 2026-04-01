@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface Video {
   title: string;
@@ -169,7 +169,7 @@ export default function VideoGallery({ videos }: { videos: Video[] }) {
               >
                 {/* Thumbnail image or gradient fallback */}
                 {video.thumbnail ? (
-                  <Image
+                  <ExportedImage
                     src={video.thumbnail}
                     alt={video.title || `Wedding Film ${i + 1}`}
                     fill

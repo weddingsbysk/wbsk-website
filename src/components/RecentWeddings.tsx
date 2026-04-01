@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface ClientItem {
   _id: string;
@@ -117,7 +117,7 @@ export default function RecentWeddings({ clients }: { clients?: ClientItem[] }) 
               <article className="bg-white rounded-xl overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-700 group-hover:-translate-y-2">
                 <div className="overflow-hidden aspect-[4/5] relative bg-espresso-100">
                   {client.coverImageUrl ? (
-                    <Image src={client.coverImageUrl} alt={client.title} fill
+                    <ExportedImage src={client.coverImageUrl} alt={client.title} fill
                       className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
                       sizes="340px" loading="lazy" />
                   ) : (

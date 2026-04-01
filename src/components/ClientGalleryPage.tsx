@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import GalleryScroll from '@/components/GalleryScroll';
 import VideoCarousel from '@/components/VideoCarousel';
@@ -102,7 +102,10 @@ export default function ClientGalleryPage({
       <section ref={heroRef} className="relative h-[88vh] min-h-[560px] overflow-hidden">
         <div className="absolute inset-0">
           {coverUrl ? (
-            <div className="client-hero-bg absolute inset-[-15%] bg-cover bg-center" style={{ backgroundImage: `url(${coverUrl})` }} />
+            <div className="client-hero-bg absolute inset-[-15%]">
+              <ExportedImage src={coverUrl} alt={coupleName} fill priority
+                className="object-cover object-center" sizes="100vw" />
+            </div>
           ) : (
             <div className="absolute inset-0 bg-gradient-to-br from-espresso-400 to-espresso-700" />
           )}
@@ -248,7 +251,7 @@ export default function ClientGalleryPage({
 
           {/* Image */}
           <div className="relative max-w-[90vw] max-h-[85vh]" onClick={(e) => e.stopPropagation()}>
-            <Image
+            <ExportedImage
               src={gallery[lightboxIndex].url}
               alt={gallery[lightboxIndex].caption || ''}
               width={1400} height={1000}

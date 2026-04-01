@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 // ─── TYPES ───────────────────────────────────────────────────────────────────
 
@@ -281,7 +281,7 @@ export default function VideoCarousel({ films }: { films: Films }) {
                     onClick={() => handleCardClick(video, i)}
                   >
                     {video.thumbnail ? (
-                      <Image
+                      <ExportedImage
                         src={video.thumbnail}
                         alt={video.title || `Video ${i + 1}`}
                         fill

@@ -3,7 +3,10 @@ node_modules/
 .env
 .env.local
 dist/
+out
 !public/images/.gitkeep
+**/nextImageExportOptimizer/
+**/next-image-export-optimizer-hashes.json
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store

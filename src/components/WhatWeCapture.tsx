@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface CaptureCategory {
   description: string;
@@ -68,7 +68,7 @@ export default function WhatWeCapture({ candid, portrait, traditional }: Props) 
                 </p>
                 <div className="relative rounded-xl overflow-hidden bg-black" style={{ aspectRatio: '1/1' }}>
                   {cat?.image ? (
-                    <Image src={cat.image} alt={label} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" />
+                    <ExportedImage src={cat.image} alt={label} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" />
                   ) : (
                     <div className="absolute inset-0 bg-black" />
                   )}
