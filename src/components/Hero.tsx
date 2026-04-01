@@ -154,8 +154,11 @@ export default function Hero({
           </div>
 
           {/* Spaced brand name */}
-          <p className="text-cream-200/50 text-xs lg:text-sm tracking-[0.5em] uppercase font-sans mb-6">
-            W e d d i n g s B y S i d d h a n t K a p o o r
+          <p
+            className="text-cream-200/60 text-sm lg:text-base tracking-[0.5em] uppercase font-body font-light mb-6"
+            aria-label="Weddings By Siddhant Kapoor"
+          >
+            W e d d i n g s &nbsp;B y &nbsp;S i d d h a n t &nbsp;K a p o o r
           </p>
 
           {/* Main heading */}
