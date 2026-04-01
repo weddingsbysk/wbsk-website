@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /Users/siddhantkapoor/Downloads/wbsk-website/src/components/*.tsx)",
+      "Bash(cp /Users/siddhantkapoor/Downloads/wbsk-website/src/components/Hero.tsx /Users/siddhantkapoor/Documents/wbsk-website/src/components/Hero.tsx)",
+      "Bash(cp /Users/siddhantkapoor/Downloads/wbsk-website/src/components/Philosophy.tsx /Users/siddhantkapoor/Documents/wbsk-website/src/components/Philosophy.tsx)",
+      "Bash(cp /Users/siddhantkapoor/Downloads/wbsk-website/src/components/RecentWeddings.tsx /Users/siddhantkapoor/Documents/wbsk-website/src/components/RecentWeddings.tsx)",
+      "Bash(cp /Users/siddhantkapoor/Downloads/wbsk-website/src/components/About.tsx /Users/siddhantkapoor/Documents/wbsk-website/src/components/About.tsx)",
+      "Bash(cp /Users/siddhantkapoor/Downloads/wbsk-website/src/components/Contact.tsx /Users/siddhantkapoor/Documents/wbsk-website/src/components/Contact.tsx)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
