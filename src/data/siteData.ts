@@ -48,16 +48,14 @@ export interface Stat {
   label: string;
 }
 
-// ─── REMOTE IMAGE HELPERS ────────────────────────────────────────────────────
-
-const BASE_URL = 'https://weddingsbysk.github.io/ShaadiPhotos';
+// ─── LOCAL IMAGE HELPERS ─────────────────────────────────────────────────────
 
 const getCoverImage = (folderName: string): string =>
-  `${BASE_URL}/weddings/${folderName}/cover.jpg`;
+  `/images/weddings/${folderName}/cover.jpg`;
 
 const generateImagePaths = (folderName: string, count: number): GalleryImage[] =>
   Array.from({ length: count }, (_, i) => ({
-    url: `${BASE_URL}/weddings/${folderName}/image-${i + 1}.jpg`,
+    url: `/images/weddings/${folderName}/image-${i + 1}.jpg`,
   }));
 
 // ─── HERO ────────────────────────────────────────────────────────────────────
@@ -68,7 +66,7 @@ export const heroData = {
     'Luxury wedding photography capturing authentic emotions, untold stories, and the quiet in-between moments that define your love.',
   ctaText: 'View Portfolio',
   secondaryText: 'Book a Session',
-  backgroundImage: `${BASE_URL}/hero-bg.jpg`,
+  backgroundImage: `/images/hero-bg.jpg`,
   scrollingCategories: [
     'Pre-Wedding',
     'Bride & Groom',
